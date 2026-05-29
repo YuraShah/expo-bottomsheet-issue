@@ -31,8 +31,7 @@ export default function BottomSheetComponent() {
 
          </Stack.Toolbar>
 
-         {isPresented && (
-            <Host>
+            <Host style={{ flex: 1 }}>
                <BottomSheet
                   isPresented={isPresented}
                   onDismiss={() => setIsPresented(false)}
@@ -47,7 +46,6 @@ export default function BottomSheetComponent() {
                   </RNHostView>
                </BottomSheet>
             </Host>
-         )}
       </Fragment>
    )
 }
